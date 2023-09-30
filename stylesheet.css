@@ -1,0 +1,419 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color : #ededed
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a 
+{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+
+}
+.navbar a:hover
+{
+    color: rgb(140, 140, 140);
+}
+.home 
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #000000;
+    background: url(home_image.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content
+{
+    max-width: 600px;
+
+}
+.home-content h3 
+{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .4s;
+}
+/* .home-content h3:nth-of-type(2)
+{
+    margin-bottom: 300px;
+} */
+.home-content h3 span
+{
+    color: #adffbf;
+}
+.home-content h1
+{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.home-content p
+{
+    font-size: 20px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+.home-sci a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffffef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.home-sci a:hover
+{
+    background: #f5f5f5;
+    color: #000000;
+    box-shadow: 0 0 20px #ffffff;
+}
+.btn-box
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000000;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop  3s ease forwards;
+}
+.btn-box:hover
+{
+    box-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff, 0 0 50px #ffffff,
+    0 0 100px #ffffff, 0 0 200px #ffffff
+}
+.about
+{
+   display: grid;
+   background: #000000;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   gap: 2rem;
+  
+}
+.about-img img
+{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2
+{
+    font-size: 60px;
+
+}
+.about-text h2 span
+{
+    color: #ffffff;
+}
+.about-text h4
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fffefe;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p
+{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#services{
+    color:#ededed;
+    background-color: #000000;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title
+{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: #adffbf;
+
+}
+.container{
+    padding: 90px;
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div
+{
+    background-color: #000000;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s transform 0.5s;
+    box-shadow: 1px 1px 20px #fdfffd,
+                1px 1px 40px #303d33
+
+}
+.services-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2 
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.services-list div a
+{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000000;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px #fff,
+                0 0 25px #adffbf
+}
+
+.read:hover
+{
+    box-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff, 0 0 50px #ffffff,
+    0 0 100px #ffffff, 0 0 200px #ffffff
+}
+.services-list div:hover{
+    transform: translate(-10px);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    background: #000000;
+
+}
+.container1
+{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+    background: #000000;
+}
+.heading1
+{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 10px;
+    margin-bottom: 50px;
+}
+.bar
+{
+    font-size: 23px;
+}
+.Technical-bars .bar
+{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child
+{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child
+{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info
+{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span 
+{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line
+{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #5a5a5a;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    0% {
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+.progress-line.html span
+{
+    width: 80%;
+}
+.progress-line.python span
+{
+    width: 90%;
+}
+.progress-line.ml span
+{
+    width: 75%;
+}
+
+.progress-line.dl span
+{
+    width: 60%;
+}
+.progress-line.ds span
+{
+    width: 90%;
+}
+.progress-line span:after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+
+}
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
