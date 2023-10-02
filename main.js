@@ -6,20 +6,17 @@ var Typed = new Typed(".text",{
     loop: true
 });
 
-// Function to trigger the progress bar animations
-function animateProgressBar() {
-    const progressBars = document.querySelectorAll('.Technical-bars .bar .progress-line');
-    
-    progressBars.forEach((bar) => {
-        bar.style.animation = 'animate 1s cubic-bezier(1,0,0.5,1) forwards';
-    });
-    
-    const progressBarSpans = document.querySelectorAll('.Technical-bars .bar .progress-line span');
-    
-    progressBarSpans.forEach((span) => {
-        span.style.animation = 'animate 1s 1s cubic-bezier(1,0,0,0.5,1) forwards';
-    });
-}
+// let circularProgress = document.querySelector(".circular-progress"),
+// progressValue = document.querySelector(".progress-value");
+// let progressStartValue = 0,    
+// progressEndValue = 90,    
+// speed = 20;
 
-// Call the function when the page loads or at the appropriate time
-window.addEventListener('load', animateProgressBar);
+// let progress = setInterval(() => {
+// progressStartValue++;
+// progressValue.textContent = `${progressStartValue}%`
+// circularProgress.style.background = `conic-gradient(#cfffd9 ${progressStartValue * 3.6}deg, #8d8787 0deg)`
+// if(progressStartValue == progressEndValue){
+//     clearInterval(progress);
+// }    
+// }, speed);
